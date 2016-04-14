@@ -13,7 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'kisom/eink.vim'
+Plugin 'https://bitbucket.org/kisom/eink.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'robertmeta/nofrils'
