@@ -13,16 +13,19 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'https://bitbucket.org/kisom/eink.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'Shougo/neocomplete.vim'
-Plugin 'robertmeta/nofrils'
 Plugin 'msanders/snipmate.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'chase/vim-ansible-yaml'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'fatih/vim-go'
 Plugin 'terryma/vim-multiple-cursors'
+
+"Plugin 'https://bitbucket.org/kisom/eink.vim'
+"Plugin 'robertmeta/nofrils'
+Plugin 'jnurmine/Zenburn'
+Plugin 'jellybeans.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -41,7 +44,7 @@ filetype plugin indent on    " required
 
 
 set nocp sta noet ai sm ru wmnu ek hid sc noeb nosol
-set bs=2 shm=at ts=8 sw=8 sts=8 ls=2 wim=full gfn=Hack go=aegiLt kmp=russian-jcukenwin imi=0 ims=0 penc=cp1251 pmbcs=utf-8
+set bs=2 shm=at ts=8 sw=8 sts=8 ls=2 wim=full gfn=Hack go=aegiLt kmp=russian-jcukenwin imi=0 ims=0 penc=cp1251 pmbcs=utf-8 t_Co=256
 set rtp^=~/.vim/bundle/ctrlp.vim
 set comments=b:#,:%,n:>
 "set list listchars=tab:»·,trail:·
@@ -49,8 +52,12 @@ set viminfo=%,'50,\"100,:100,n~/.viminfo
 
 syntax on
 
-colorscheme nofrils-dark
-"set background=dark
+if has('gui_running')
+    set background=dark
+    colorscheme codeschool
+els
+    set background=dark
+endif
 
 let g:neocomplete#enable_at_startup = 1
 
