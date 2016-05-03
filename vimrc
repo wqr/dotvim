@@ -39,22 +39,19 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+
 set nocp sta noet ai sm ru wmnu ek hid sc noeb nosol
-set bs=2 shm=at ts=8 sw=8 sts=8 ls=2 wim=full gfn=Source\ Code\ Pro\ for\ Powerline go=aegiLt kmp=russian-jcukenwin imi=0 ims=0 penc=cp1251 pmbcs=utf-8
+set bs=2 shm=at ts=8 sw=8 sts=8 ls=2 wim=full gfn=Hack go=aegiLt kmp=russian-jcukenwin imi=0 ims=0 penc=cp1251 pmbcs=utf-8
 set rtp^=~/.vim/bundle/ctrlp.vim
 set comments=b:#,:%,n:>
 "set list listchars=tab:»·,trail:·
 set viminfo=%,'50,\"100,:100,n~/.viminfo
 
-"filetype off
-"call pathogen#infect()
-"call pathogen#helptags()
-"filetype plugin indent on
-"syntax on
+syntax on
 
 colorscheme nofrils-dark
+"set background=dark
 
-let g:powerline_pycmd = 'py3'
 let g:neocomplete#enable_at_startup = 1
 
 map ,c "0yw
