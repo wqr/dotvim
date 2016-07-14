@@ -66,8 +66,8 @@ map ,v viw"0p
 map <M-Right> :bn<CR>
 map <M-Left>  :bp<CR>
 
-setlocal spell spelllang=ru_yo,en_us
-set nospell
+"setlocal spell spelllang=ru_yo,en_us
+"set nospell
 
 "set relativenumber
 "set number
