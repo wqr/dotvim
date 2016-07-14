@@ -19,6 +19,9 @@ Plugin 'msanders/snipmate.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'chase/vim-ansible-yaml'
 Plugin 'Lokaltog/vim-easymotion'
+Plugin 'haya14busa/incsearch.vim'
+Plugin 'haya14busa/incsearch-fuzzy.vim'
+Plugin 'haya14busa/incsearch-easymotion.vim'
 Plugin 'fatih/vim-go'
 Plugin 'terryma/vim-multiple-cursors'
 
@@ -43,7 +46,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 
-set nocp sta noet ai sm ru wmnu ek hid sc noeb nosol
+set nocp sta noet ai sm ru wmnu ek hid sc noeb nosol hls
 set bs=2 shm=at ts=8 sw=8 sts=8 ls=2 wim=full gfn=Hack go=aegiLt kmp=russian-jcukenwin imi=0 ims=0 penc=cp1251 pmbcs=utf-8 t_Co=256
 set rtp^=~/.vim/bundle/ctrlp.vim
 set comments=b:#,:%,n:>
@@ -75,7 +78,7 @@ set nospell
 map <F3> qq
 map <F4> @q
 
-"EasyMotion
+""EasyMotion
 "let g:EasyMotion_do_mapping = 0
 "nmap <Leader>s <Plug>(easymotion-s)
 ""nmap f <Plug>(easymotion-s)
@@ -131,3 +134,10 @@ function! Multiple_cursors_after()
     exe 'NeoCompleteUnlock'
   endif
 endfunction
+
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
+map z/ <Plug>(incsearch-easymotion-/)
+map z? <Plug>(incsearch-easymotion-?)
+map zg/ <Plug>(incsearch-easymotion-stay)
