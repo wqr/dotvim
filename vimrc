@@ -1,4 +1,4 @@
-let $GOPATH = '/home/i/go'
+let $GOPATH = $HOME . '/go'
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
