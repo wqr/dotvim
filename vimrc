@@ -46,7 +46,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 
-set nocp sta noet ai sm ru wmnu ek hid sc noeb nosol hls
+set nocp sta noet ai sm ru wmnu ek hid sc noeb nosol hls aw
 set bs=2 shm=at ts=8 sw=8 sts=8 ls=2 wim=full gfn=Hack go=aegiLt kmp=russian-jcukenwin imi=0 ims=0 penc=cp1251 pmbcs=utf-8 t_Co=256
 set rtp^=~/.vim/bundle/ctrlp.vim
 set comments=b:#,:%,n:>
