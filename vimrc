@@ -22,6 +22,7 @@ Plug 'haya14busa/incsearch-fuzzy.vim'
 Plug 'haya14busa/incsearch-easymotion.vim'
 Plug 'fatih/vim-go'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'dhruvasagar/vim-table-mode'
 
 Plug 'jnurmine/Zenburn'
 Plug 'jellybeans.vim'
