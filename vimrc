@@ -1,37 +1,61 @@
+" Load vim-plug
+if empty(glob('~/.vim/autoload/plug.vim'))
+	execute '!curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+endif
+
 let $GOPATH = $HOME . '/go'
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+call plug#begin()
+Plug 'tpope/vim-fugitive'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'mattn/emmet-vim'
+Plug 'Shougo/neocomplete.vim'
+Plug 'msanders/snipmate.vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'chase/vim-ansible-yaml'
+Plug 'Lokaltog/vim-easymotion'
+Plug 'haya14busa/incsearch.vim'
+Plug 'haya14busa/incsearch-fuzzy.vim'
+Plug 'haya14busa/incsearch-easymotion.vim'
+Plug 'fatih/vim-go'
+Plug 'terryma/vim-multiple-cursors'
+
+Plug 'jnurmine/Zenburn'
+Plug 'jellybeans.vim'
+call plug#end()
+
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+"set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
-Plugin 'VundleVim/Vundle.vim'
+"Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'tpope/vim-fugitive'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'mattn/emmet-vim'
-Plugin 'Shougo/neocomplete.vim'
-Plugin 'msanders/snipmate.vim'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'chase/vim-ansible-yaml'
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'haya14busa/incsearch.vim'
-Plugin 'haya14busa/incsearch-fuzzy.vim'
-Plugin 'haya14busa/incsearch-easymotion.vim'
-Plugin 'fatih/vim-go'
-Plugin 'terryma/vim-multiple-cursors'
+"Plugin 'tpope/vim-fugitive'
+"Plugin 'ctrlpvim/ctrlp.vim'
+"Plugin 'mattn/emmet-vim'
+"Plugin 'Shougo/neocomplete.vim'
+"Plugin 'msanders/snipmate.vim'
+"Plugin 'leafgarland/typescript-vim'
+"Plugin 'chase/vim-ansible-yaml'
+"Plugin 'Lokaltog/vim-easymotion'
+"Plugin 'haya14busa/incsearch.vim'
+"Plugin 'haya14busa/incsearch-fuzzy.vim'
+"Plugin 'haya14busa/incsearch-easymotion.vim'
+"Plugin 'fatih/vim-go'
+"Plugin 'terryma/vim-multiple-cursors'
 
 "Plugin 'https://bitbucket.org/kisom/eink.vim'
 "Plugin 'robertmeta/nofrils'
-Plugin 'jnurmine/Zenburn'
-Plugin 'jellybeans.vim'
+"Plugin 'jnurmine/Zenburn'
+"Plugin 'jellybeans.vim'
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
+"call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
