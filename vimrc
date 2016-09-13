@@ -28,52 +28,11 @@ Plug 'jnurmine/Zenburn'
 Plug 'jellybeans.vim'
 call plug#end()
 
-" set the runtime path to include Vundle and initialize
-"set rtp+=~/.vim/bundle/Vundle.vim
-"call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-"Plugin 'VundleVim/Vundle.vim'
-
-"Plugin 'tpope/vim-fugitive'
-"Plugin 'ctrlpvim/ctrlp.vim'
-"Plugin 'mattn/emmet-vim'
-"Plugin 'Shougo/neocomplete.vim'
-"Plugin 'msanders/snipmate.vim'
-"Plugin 'leafgarland/typescript-vim'
-"Plugin 'chase/vim-ansible-yaml'
-"Plugin 'Lokaltog/vim-easymotion'
-"Plugin 'haya14busa/incsearch.vim'
-"Plugin 'haya14busa/incsearch-fuzzy.vim'
-"Plugin 'haya14busa/incsearch-easymotion.vim'
-"Plugin 'fatih/vim-go'
-"Plugin 'terryma/vim-multiple-cursors'
-
-"Plugin 'https://bitbucket.org/kisom/eink.vim'
-"Plugin 'robertmeta/nofrils'
-"Plugin 'jnurmine/Zenburn'
-"Plugin 'jellybeans.vim'
-
-" All of your Plugins must be added before the following line
-"call vundle#end()            " required
 filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-
 
 set nocp sta noet ai sm ru wmnu ek hid sc noeb nosol hls aw
 set bs=2 shm=at ts=8 sw=8 sts=8 ls=2 wim=full go=aegiLt kmp=russian-jcukenwin imi=0 ims=0 penc=cp1251 pmbcs=utf-8 t_Co=256
-"set gfn=Hack
+set gfn=Hack
 set rtp^=~/.vim/bundle/ctrlp.vim
 set comments=b:#,:%,n:>
 "set list listchars=tab:»·,trail:·
@@ -84,7 +43,7 @@ syntax on
 if has('gui_running')
     set background=dark
     colorscheme codeschool
-els
+else
     set background=dark
 endif
 
