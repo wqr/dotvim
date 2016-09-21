@@ -21,6 +21,7 @@ Plug 'haya14busa/incsearch.vim'
 Plug 'haya14busa/incsearch-fuzzy.vim'
 Plug 'haya14busa/incsearch-easymotion.vim'
 Plug 'fatih/vim-go'
+Plug 'fatih/molokai'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'dhruvasagar/vim-table-mode'
 
@@ -30,27 +31,60 @@ call plug#end()
 
 filetype plugin indent on    " required
 
-set nocp sta noet ai sm ru wmnu ek hid sc noeb nosol hls aw
-set bs=2 shm=at ts=8 sw=8 sts=8 ls=2 wim=full go=aegiLt kmp=russian-jcukenwin imi=0 ims=0 penc=cp1251 pmbcs=utf-8 t_Co=256
-set gfn=Hack
-set rtp^=~/.vim/bundle/ctrlp.vim
-set comments=b:#,:%,n:>
-"set list listchars=tab:»·,trail:·
-set viminfo=%,'50,\"100,:100,n~/.viminfo
+set smarttab		"sta
+set noexpandtab		"noet
+set autoindent		"ai
+set showmatch		"sm
+set ruler		"ru
+set wildmenu		"wmnu
+set esckeys		"ek
+set hidden		"hid
+set showcmd		"sc
+set noerrorbells	"noeb def:off
+set nostartofline	"nosol
+set hlsearch		"hls def:off
+set autoread		"ar def:off
+set autowrite		"aw def:off
+
+set backspace=indent,eol,start	"bs def:""
+set shortmess=at		"shm def:"filnxtToO"
+set tabstop=8			"ts def:8
+set shiftwidth=8		"sw def:8
+set softtabstop=8		"sts def:8
+set laststatus=2		"ls def:1
+set wildmode=full		"wim def:"longest,full"
+set guioptions=aegiLt		"go def:"gmrLtT"
+set keymap=russian-jcukenwin	"kmp def:""
+set iminsert=0			"imi def:0,2
+set imsearch=0			"ims def:0,2
+set printencoding=cp1251	"penc def:""
+set printmbcharset=utf-8	"pmbcs def:""
+set gfn=SourceCodePro
+"set comments=b:#,:%,n:>
+""set list listchars=tab:»·,trail:·
+set viminfo=%,'50,\"100,:100,n~/.vim/viminfo
+
+au BufWinLeave * mkview
+au BufWinEnter * silent loadview
+
+set t_Co=256
 
 syntax on
 
+let g:molokai_original = 1
+
 if has('gui_running')
     set background=dark
-    colorscheme codeschool
+    colorscheme molokai
 else
     set background=dark
+    colorscheme molokai
 endif
 
 let g:neocomplete#enable_at_startup = 1
 
-map ,c "0yw
-map ,v viw"0p
+"map ,c "0yw
+"map ,v viw"0p
 map <M-Right> :bn<CR>
 map <M-Left>  :bp<CR>
 
