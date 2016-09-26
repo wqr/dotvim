@@ -1,3 +1,6 @@
 autoload/
 plugged/
 vimrc+
+.netrwhist
+view/
+viminfo
