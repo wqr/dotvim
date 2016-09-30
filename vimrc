@@ -64,8 +64,8 @@ set gfn=SourceCodePro
 ""set list listchars=tab:»·,trail:·
 set viminfo=%,'50,\"100,:100,n~/.vim/viminfo
 
-au BufWinLeave * mkview
-au BufWinEnter * silent loadview
+au BufWinLeave ?* mkview
+au BufWinEnter ?* silent loadview
 
 set t_Co=256
 
