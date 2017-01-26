@@ -27,6 +27,7 @@ Plug 'dhruvasagar/vim-table-mode'
 
 Plug 'jnurmine/Zenburn'
 Plug 'jellybeans.vim'
+Plug 'robertmeta/nofrils'
 call plug#end()
 
 filetype plugin indent on    " required
@@ -75,10 +76,12 @@ let g:molokai_original = 1
 
 if has('gui_running')
     set background=dark
-    colorscheme molokai
+    "colorscheme molokai
+    colorscheme nofrils-dark
 else
     set background=dark
-    colorscheme molokai
+    "colorscheme molokai
+    colorscheme nofrils-dark
 endif
 
 let g:neocomplete#enable_at_startup = 1
