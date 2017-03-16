@@ -65,6 +65,7 @@ set gfn=Go\ Mono\ 10
 ""set list listchars=tab:»·,trail:·
 set viminfo=%,'50,\"100,:100,n~/.vim/viminfo
 
+set viewoptions-=options
 au BufWinLeave *.* mkview
 au BufWinEnter *.* silent loadview
 
