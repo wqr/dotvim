@@ -26,7 +26,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'dhruvasagar/vim-table-mode'
 
 Plug 'jnurmine/Zenburn'
-Plug 'jellybeans.vim'
+"Plug 'jellybeans.vim'
 Plug 'robertmeta/nofrils'
 call plug#end()
 
